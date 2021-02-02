@@ -257,5 +257,6 @@ svg#svg_3 {
 }
 
 @media (max-width:640px){
+.flex.xs\:flex-col.sm\:flex-row.justify-center.items-center.select-none.my-16{
     display: none;
-}
+}}
