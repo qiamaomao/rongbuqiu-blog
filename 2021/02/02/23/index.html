@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="cmn-Hans-CN">
+<head>
+  
+  <title>憨憨笔记 · Win10系统C语言环境搭建 | 绒布球</title>
+  <meta data-n-head="1" charset="utf-8">
+  <meta name="keywords" content=" C语言 , Vscode 编辑器 绒布球">
+  <meta name="description" content="此文章以记录为目的，边学边写，在WIN10上搭建C语言环境，有错的地方希望可以帮我纠正 。 | 绒布球">
+  <link data-n-head="1" rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+   <body>
+       <div id="diy"> 
+   <div id="layout"> 
+    <div id="default-layout" class="default-diy"> 
+     <div id="layout-container"> 
+      <div class="header px-6 justify-end"> 
+       <img id="logo" alt="LOGO" src="https://p.pstatp.com/origin/ffe10002f518b2105736" class="w-12 absolute left-0 z-50 transition cursor-pointer ml-6" /> 
+       <div id="pc" class="relative"> 
+        <ul class="menu hide none-active-articles"> 
+         <li class="menu-item hover:primary"><a href="/" class="menu-item hover:primary"> 首页 </a></li> 
+         <li class="menu-item hover:primary"><a href="/archives" class="menu-item hover:primary"> 文章 </a></li> 
+         <li class="menu-item hover:primary"><a href="/wzgd" class="menu-item hover:primary"> 归档 </a></li> 
+         <li class="menu-item hover:primary"><a target="_blank" rel="noopener" href="https://support.qq.com/products/150335?" class="menu-item hover:primary"> 碎碎念 </a></li>
+         <li class="menu-item hover:primary"><a rel="noopener noreferrer" href="/about">关于本站</a></li> 
+        </ul> 
+       </div> 
+       <div id="pe" class="relative"> 
+        <div onclick="clickshow('pecd');"> 
+         <img src="https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/list.svg" class="toggle-btn" /> 
+        </div> 
+        <ul id="pecd" class="menu is-collapse hide none-active" style="display: none;"> 
+         <li id="pecdli" class="menu-item hover:primary"><a href="/" class="menu-item hover:primary"> 首页 </a></li> 
+         <li id="pecdli" class="menu-item hover:primary"><a href="/archives" class="menu-item hover:primary"> 文章 </a></li> 
+         <li id="pecdli" class="menu-item hover:primary"><a href="/wzgd" class="menu-item hover:primary"> 归档 </a></li> 
+         <li id="pecdli" class="menu-item hover:primary"><a rel="noopener noreferrer" target="_blank" href="/about">关于本站</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="scroll-area"> 
+<div>
+<div class="markdown-container">
+<div class="markdown-wrapper">
+<h1 class="mt-3 mb-4 text-4xl text-gray-800 font-bold">憨憨笔记 · Win10系统C语言环境搭建</h1>
+<div class="mb-4 flex items-center cursor-default"><div class="w-12 h-6 mr-4 flex justify-center items-center rounded-md text-sm select-none bg-primary text-white">
+原创
+</div>
+ <span title="本文作者" class="mr-4">沂佰孜猫</span>
+  
+      <a class="mr-4 primary opacity-75 cursor-pointer-link" href="/categories/%E6%86%A8%E6%86%A8%E7%AC%94%E8%AE%B0/">憨憨笔记</a>
+  
+  <div title="发布时间" class="text-gray-500">
+2021年02月02日
+</div></div>
+<p class="mb-6 text-gray-600">
+此文章以记录为目的，边学边写，在WIN10上搭建C语言环境，有错的地方希望可以帮我纠正 。
+</p>
+<article><div class="frontmatter-markdown sm:w-full" id="markdown-content">
+<h2 id="MinGw的下载与安装"><a href="#MinGw的下载与安装" class="headerlink" title="MinGw的下载与安装"></a>MinGw的下载与安装</h2><p> 首先要知道它是干啥？ <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/mingw/1777782?fr=aladdin">MinGw 百度百科</a> </p>
+<blockquote>
+<p>下载链接找到<strong>x86_64-posix-seh</strong>点击下载,把文件解压到自己感觉合适的地方。</p>
+</blockquote>
+<ul>
+<li>MinGw下载 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/">点击下载</a></li>
+</ul>
+<p><img src="https://p.pstatp.com/origin/13801000221322289c813" alt="找到下载"></p>
+<ul>
+<li>MinGw安装(配置系统环境变量)</li>
+</ul>
+<blockquote>
+<p>打开我的电脑-属性-高级系统设置-高级-环境变量<br>在系统变量中找到Path变量，选择编辑(没有则新建)，将之前mingw解压后目录下bin文件夹目录添加至其中</p>
+</blockquote>
+<blockquote>
+<p>然后在系统变量中找到include变量(没有则新建一个，不区分大小写)，编辑，将原mingw解压目录下include文件夹目录添加进去。</p>
+</blockquote>
+<blockquote>
+<p>配置好要重启一下电脑</p>
+</blockquote>
+<h2 id="编辑器选用-Visual-Studio-Code-vscode"><a href="#编辑器选用-Visual-Studio-Code-vscode" class="headerlink" title="编辑器选用 Visual Studio Code(vscode)"></a>编辑器选用 Visual Studio Code(vscode)</h2><blockquote>
+<p>国内网络原因建议去腾讯软件中心下载 <a target="_blank" rel="noopener" href="https://pc.qq.com/detail/16/detail_22856.html">Visual Studio Code 下载</a></p>
+</blockquote>
+<blockquote>
+<p>安装就下一步，下一步就好了，安装好打开，按照图里安装中文拓展，安装好下面有提示重新打开软件。</p>
+</blockquote>
+<p><img src="https://p.pstatp.com/origin/138430002c93e4a08fdcb" alt="切换中文"></p>
+<blockquote>
+<p>然后安装 c/c++ 和 code runner 和上图第二步一样搜索选第一个安装</p>
+</blockquote>
+<h2 id="创建第一个-C-程序-Hello-c"><a href="#创建第一个-C-程序-Hello-c" class="headerlink" title="创建第一个 C 程序 Hello.c"></a>创建第一个 C 程序 Hello.c</h2><blockquote>
+<p>指定一个目录，新建文件夹，新建一个文件，保存文件后缀为<code>.c</code>在文件中写入</p>
+</blockquote>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+&#123;
+    /* 我的第一个 C 程序 */
+    printf(&quot;Hello, World! \n&quot;);
+    return 0;
+&#125;
+</code></pre>
+<blockquote>
+<p>点击右上角的三角形来运行它，在下方查看输出结果</p>
+</blockquote>
+<p><img src="https://p.pstatp.com/origin/fe38000266b0c7f11e1c" alt="第一个C程序"></p>
+
+</div>
+</article>
+</div>
+</div>
+</div>
+      </div>
+<div class="sidebar_wo" id="leimu"> 
+<img src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/leimu1.png" alt="雷姆" onmouseover="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/leimu2.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/leimu1.png'"> 
+</div>
+<div class="sidebar_wo" id="lamu"> 
+<img src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lamu1.png" alt="拉姆" onmouseover="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lamu2.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lamu1.png'"> 
+</div>
+     </div> 
+    </div> 
+   </div> 
+  </div>
+   </body>
+   <script type="text/javascript">
+function clickshow(pecd){
+    var _obj = document.getElementById(pecd);
+    if(_obj.style.display == 'block'){
+        _obj.style.display='none';
+    }else {
+        _obj.style.display='block';
+    }
+}
+</script>
+<script src="https://cdn.staticfile.org/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+</html>
