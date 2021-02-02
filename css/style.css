@@ -214,12 +214,12 @@ div#lamu,div#leimu{display:none}
 .tagcloud.site a:before{content:"# "}
 span.tagcloud.li-unordered.list-count:before{content:" "}
 .ml-1.text-lg.cursor-pointer:hover{transform:rotate(7deg);-ms-transform:rotate(7deg);-moz-transform:rotate(7deg);-webkit-transform:rotate(7deg);-o-transform:rotate(7deg)}
-.ns-button.ns-button--primary{animation:sport 1.123s;transform:translateY(0)}
-.cover{animation:sport 1.345s}
+.ns-button.ns-button--primary{animation:sport .623s;transform:translateY(0)}
+.cover{animation:sport .789s}
 .cover,div#leimu{transform:translateY(0)}
 div#leimu{animation:sport 1.145s}
 div#lamu{animation:sport 1.245s;transform:translateY(0)}
-.items-center,.markdown-container{animation:sport 1.5s;transform:translateY(0)}
+.items-center,.markdown-container{animation:sport 1.234s;transform:translateY(0)}
 .scroll-area{animation:sport 1.234s;transform:translateY(0)}
 @keyframes sport{0%{transform:translateY(100px);opacity:1}
 to{transform:translateY(0);opacity:1}
