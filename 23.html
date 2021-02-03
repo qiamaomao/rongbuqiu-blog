@@ -6,13 +6,13 @@
   <meta data-n-head="1" charset="utf-8">
   <meta name="keywords" content=" C语言 , Vscode 编辑器 绒布球">
   <meta name="description" content="此文章以记录为目的，边学边写，在WIN10上搭建C语言环境，有错的地方希望可以帮我纠正 。 | 绒布球">
-  <link data-n-head="1" rel="icon" type="image/x-icon" href="https://p.pstatp.com/origin/ffe10002f518b2105736">
+  <link data-n-head="1" rel="icon" type="image/x-icon" href="">
   <meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
   <link rel="dns-prefetch" href="//cdn.staticfile.org" />
   <link rel="dns-prefetch" href="//p.pstatp.com" />
-  <link rel="stylesheet" href="/css/style.css?v=1612287171571">
+  <link rel="stylesheet" href="/css/style.css?v=1612321157850">
 </head>
    <body>
        <div id="diy"> 
@@ -62,9 +62,7 @@
 </p>
 <article><div class="frontmatter-markdown sm:w-full" id="markdown-content">
 <h2 id="MinGw的下载与安装"><a href="#MinGw的下载与安装" class="headerlink" title="MinGw的下载与安装"></a>MinGw的下载与安装</h2><p> 首先要知道它是干啥？ <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/mingw/1777782?fr=aladdin">MinGw 百度百科</a> </p>
-<blockquote>
-<p>下载链接找到<strong>x86_64-posix-seh</strong>点击下载,把文件解压到自己感觉合适的地方。</p>
-</blockquote>
+<p> 下载链接找到<strong>x86_64-posix-seh</strong>点击下载,把文件解压到自己感觉合适的地方。</p>
 <ul>
 <li>MinGw下载 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/">点击下载</a></li>
 </ul>
@@ -72,28 +70,14 @@
 <ul>
 <li>MinGw安装(配置系统环境变量)</li>
 </ul>
-<blockquote>
 <p>打开我的电脑-属性-高级系统设置-高级-环境变量<br>在系统变量中找到Path变量，选择编辑(没有则新建)，将之前mingw解压后目录下bin文件夹目录添加至其中</p>
-</blockquote>
-<blockquote>
 <p>然后在系统变量中找到include变量(没有则新建一个，不区分大小写)，编辑，将原mingw解压目录下include文件夹目录添加进去。</p>
-</blockquote>
-<blockquote>
 <p>配置好要重启一下电脑</p>
-</blockquote>
-<h2 id="编辑器选用-Visual-Studio-Code-vscode"><a href="#编辑器选用-Visual-Studio-Code-vscode" class="headerlink" title="编辑器选用 Visual Studio Code(vscode)"></a>编辑器选用 Visual Studio Code(vscode)</h2><blockquote>
-<p>国内网络原因建议去腾讯软件中心下载 <a target="_blank" rel="noopener" href="https://pc.qq.com/detail/16/detail_22856.html">Visual Studio Code 下载</a></p>
-</blockquote>
-<blockquote>
+<h2 id="编辑器选用-Visual-Studio-Code-vscode"><a href="#编辑器选用-Visual-Studio-Code-vscode" class="headerlink" title="编辑器选用 Visual Studio Code(vscode)"></a>编辑器选用 Visual Studio Code(vscode)</h2><p>国内网络原因建议去腾讯软件中心下载 <a target="_blank" rel="noopener" href="https://pc.qq.com/detail/16/detail_22856.html">Visual Studio Code 下载</a></p>
 <p>安装就下一步，下一步就好了，安装好打开，按照图里安装中文拓展，安装好下面有提示重新打开软件。</p>
-</blockquote>
 <p><img src="https://p.pstatp.com/origin/138430002c93e4a08fdcb" alt="切换中文"></p>
-<blockquote>
 <p>然后安装 c/c++ 和 code runner 和上图第二步一样搜索选第一个安装</p>
-</blockquote>
-<h2 id="创建第一个-C-程序-Hello-c"><a href="#创建第一个-C-程序-Hello-c" class="headerlink" title="创建第一个 C 程序 Hello.c"></a>创建第一个 C 程序 Hello.c</h2><blockquote>
-<p>指定一个目录，新建文件夹，新建一个文件，保存文件后缀为<code>.c</code>在文件中写入</p>
-</blockquote>
+<h2 id="创建第一个-C-程序-Hello-c"><a href="#创建第一个-C-程序-Hello-c" class="headerlink" title="创建第一个 C 程序 Hello.c"></a>创建第一个 C 程序 Hello.c</h2><p> 指定一个目录，新建文件夹，新建一个文件，保存文件后缀为<code>.c</code>在文件中写入</p>
 <pre><code>#include &lt;stdio.h&gt;
 int main()
 &#123;
@@ -102,9 +86,7 @@ int main()
     return 0;
 &#125;
 </code></pre>
-<blockquote>
 <p>点击右上角的三角形来运行它，在下方查看输出结果</p>
-</blockquote>
 <p><img src="https://p.pstatp.com/origin/fe38000266b0c7f11e1c" alt="第一个C程序"></p>
 
 </div>
