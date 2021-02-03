@@ -114,7 +114,11 @@ fieldset,ol,ul{margin:0;padding:0}
 ol,ul{list-style:none}
 .header .menu{position:relative;z-index:50;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#4a5568;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;overflow:hidden}
 .menu.is-collapse{position:absolute;top:0;right:0;z-index:50;width:8rem;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background-color:#fff;margin-top:3.5rem;border-radius:1.6rem;-webkit-box-shadow:0 0 20px 5px rgba(0,0,0,.06);box-shadow:0 0 20px 5px rgba(0,0,0,.06)}
-.menu.is-collapse.hide{-webkit-animation:menuHide .3s ease-out forwards;animation:menuHide .3s ease-out forwards}
+.menu.is-collapse.hide{-webkit-animation: fadeIn 1s ease 0s 1 both;
+    -ms-animation: fadeIn .567s ease 0s 1 both;
+    -moz-animation: fadeIn .567s ease 0s 1 both;
+    -o-animation: fadeIn .567s ease 0s 1 both;
+    animation: fadeIn .567s ease 0s 1 both;}
 .none{dispaly:none}
 .creation-list{display:grid;grid-template-columns:1fr;grid-gap:2rem;gap:2rem}
 @media (min-width:768px){.creation-list{padding:70px;grid-template-columns:1fr 1fr;grid-gap:2.4rem;gap:2.4rem}
@@ -274,4 +278,13 @@ to{opacity:1}
 }
 article {
     margin-top: 2rem;
+}
+
+
+#default-layout {
+    -webkit-animation: fadeIn 1s ease 0s 1 both;
+    -ms-animation: fadeIn 1s ease 0s 1 both;
+    -moz-animation: fadeIn 1s ease 0s 1 both;
+    -o-animation: fadeIn 1s ease 0s 1 both;
+    animation: fadeIn 1s ease 0s 1 both;
 }
