@@ -30,7 +30,6 @@ div#diy,div#layout{width:100%;height:100%;background-color:#fff;overflow:hidden}
 @media (min-width:1920px){#default-layout{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 }
 #layout-container{position:relative;height:100%;overflow:hidden;min-height:500px;border-radius:30px}
-.justify-end{border-top-left-radius:50px;border-top-right-radius:50px;border-bottom-right-radius:50px;border-bottom-left-radius:50px}
 #layout-container,.header{width:100%;background-color:#fff}
 .header{position:absolute;top:0;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;z-index:999999;height:4rem;line-height:4rem;-webkit-transition:all .3s;transition:all .3s;-webkit-box-shadow:0 0 25px 15px rgba(47,88,255,.05);box-shadow:0 0 25px 15px rgba(47,88,255,.05);-webkit-box-shadow:0 0 25px 15px rgba(var(--ns-primary),.05);box-shadow:0 0 25px 15px rgba(var(--ns-primary),.05);background-color:hsla(0,0%,100%,.8);-webkit-backdrop-filter:saturate(180%) blur(5px);backdrop-filter:saturate(180%) blur(5px)}
 .px-6{padding-left:1.5rem;padding-right:1.5rem}
