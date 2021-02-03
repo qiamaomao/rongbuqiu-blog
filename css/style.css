@@ -221,7 +221,7 @@ div#lamu{transform:translateY(0)}
 @keyframes sport{0%{transform:translateY(100px)}
 to{transform:translateY(0)}
 }
-.toggle{position:absolute;left:-25px;top:0;width:16px;height:16px;border-radius:50%;background:#e6f1fb;cursor:pointer}
+.toggle{position:absolute;left:-22px;top:1.5px;width:16px;height:16px;border-radius:50%;background:#e6f1fb;cursor:pointer}
 .toggle:after,.toggle:before{position:absolute;left:50%;margin-left:-3px;margin-top:-3px;top:50%;content:" ";width:6px;height:6px;border-radius:50%;background:#06c;z-index:2;opacity:.4}
 .flex.xs\:flex-col.sm\:flex-row.justify-center.items-center.select-none.my-16{margin-top:6rem}
 .mx-12{margin-left:3rem;margin-right:3rem}
@@ -250,4 +250,24 @@ to{opacity:1}
 }
 @keyframes fadeIn{0%{opacity:0}
 to{opacity:1}
+}
+
+#markdown-content h2 {
+    background: linear-gradient(to bottom,transparent 60%,rgb(238 244 255) 0) no-repeat;
+    width: auto;
+    display: table;
+}
+#spimes-archives {
+    padding: 25px 0px 0px 0px ;
+}
+
+.list-archive-day {
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 25px 0px 0px 25px;
+    position: relative;
+}
+.list-archive-day a {
+    position: relative;
 }
