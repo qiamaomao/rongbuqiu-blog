@@ -86,7 +86,7 @@ img{border-style:none}
 @media (min-width:640px){.header .menu .menu-item{width:5rem}
 div#pe{display:none}
 }@media (max-width:1024px){.nav{display:none}
-}@media (max-width:640px){.toggle {top: -1.5px;}
+}@media (max-width:640px){.toggle {top: -1.5px!important;}
 div#pc{display:none}
 }*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;border:0 solid #e2e8f0}
 fieldset,ol,ul{margin:0;padding:0}
