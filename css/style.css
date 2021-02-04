@@ -579,11 +579,11 @@ ol,ul {
 }
 
 .menu.is-collapse.hide {
-	-webkit-animation: fadeIn 1s ease 0s 1 both;
-	-ms-animation: fadeIn .567s ease 0s 1 both;
-	-moz-animation: fadeIn .567s ease 0s 1 both;
-	-o-animation: fadeIn .567s ease 0s 1 both;
-	animation: fadeIn .567s ease 0s 1 both;
+	-webkit-animation: fadeIn .234s ease 0s 1 both;
+	-ms-animation: fadeIn .234s ease 0s 1 both;
+	-moz-animation: fadeIn .234s ease 0s 1 both;
+	-o-animation: fadeIn .234s ease 0s 1 both;
+	animation: fadeIn .234s ease 0s 1 both;
 }
 
 .none {
@@ -1334,14 +1334,6 @@ article {
 	margin-top: 2rem;
 }
 
-#default-layout {
-	-webkit-animation: fadeIn 1s ease 0s 1 both;
-	-ms-animation: fadeIn 1s ease 0s 1 both;
-	-moz-animation: fadeIn 1s ease 0s 1 both;
-	-o-animation: fadeIn 1s ease 0s 1 both;
-	animation: fadeIn 1s ease 0s 1 both;
-}
-
 .nav {
 	position: fixed;
 	font-size: .875rem;
@@ -1418,7 +1410,6 @@ to{transform:translate3d(85px,0,0)}
 .parallax>use:nth-child(3){fill:#e5edfc}
 .parallax>use:nth-child(4){fill:#edf3fe}
 
-#layout-container{box-shadow:0 1px 3px 1px #e5edfc}
 @media (max-width:640px){
 .waves-bg{display:none}
 }
