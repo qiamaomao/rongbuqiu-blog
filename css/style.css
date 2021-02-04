@@ -78,7 +78,7 @@ button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inheri
 }@media (min-width:821px){.cover{width:45%}
 }@media (min-width:1040px){.cover{width:50%}
 }@media (min-width:1160px){.cover{width:60%}
-}@media (min-width:1280px){.cover{width:398px}
+}@media (min-width:1280px){.cover{width:360px}
 }img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none}
 img,video{max-width:100%;height:auto}
 audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}
